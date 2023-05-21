@@ -1,0 +1,17 @@
+header {
+	position: fixed;
+	top: 0px;
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+	padding: 18px 48px;
+	box-sizing: border-box;
+	z-index: 100;
+	> div {
+		display: flex;
+		gap: 16px;
+	}
+	.logo {
+		
+	}
+}

@@ -1,0 +1,15 @@
+.input-text {
+	width: 100%;
+	label {
+		display: block;
+	}
+	input {
+		width: 100%;
+		padding: 19.5px 0px 19.5px 24px;
+		background-color: var(--color-white);
+		border: 1px solid var(--gray-15);
+		border-radius: 4px;
+		box-sizing: border-box;
+		color: var(--gray-100);
+	}
+}

@@ -1,0 +1,22 @@
+footer {
+	width: 100vw;
+	min-width: 378px;
+	padding: 26px 65px;
+	box-sizing: border-box;
+	> div {
+		display: flex;
+		justify-content: space-between;
+		padding: 28px 64px;
+		background-color: var(--color-green-400);
+		border-radius: 112px;
+		@media screen and (max-width: 600px) {
+			justify-content: center;
+			.btn {
+				display: none;
+			}
+		}
+		svg path, svg ellipse {
+			fill: var(--color-background);
+		}
+	}
+}

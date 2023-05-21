@@ -1,0 +1,31 @@
+.btn {
+	--color-btn-background: var(--gray-100);
+	--color-btn-border: var(--gray-100);
+	--color-btn-text: var(--color-white);
+	--padding-btn: 8.5px 24px;
+
+	&-white{
+		--color-btn-background: var(--color-white);
+		--color-btn-border: var(--color-white);
+		--color-btn-text: var(--gray-100);
+	}
+	&-big{
+		--padding-btn: 16px 34px;
+	}
+	&-primary{
+		background-color: var(--color-btn-background);
+	}
+	&-secondary{
+		background-color: transparent;
+		color: var(--color-btn-background);
+	}
+
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: var(--padding-btn);
+	color: var(--color-btn-text);
+	border: 1px solid var(--color-btn-border);
+	border-radius: 51px;
+	cursor: pointer;
+}

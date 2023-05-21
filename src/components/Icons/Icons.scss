@@ -1,0 +1,15 @@
+.icon {
+	--color-icon: var(--gray-100);
+	> div {
+		display: flex;
+		align-items: center;
+	}
+	.icon-color{
+		&-white {
+			--color-icon: var(--color-white)
+		}
+	}
+	path {
+		stroke: var(--color-icon);
+	}
+}
