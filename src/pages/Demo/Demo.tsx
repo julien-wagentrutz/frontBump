@@ -73,7 +73,7 @@ const Demo = () => {
 				</form>
 				<div className="resultat mt-18">
 					{!identityFinish && loading && (
-						<>
+						<div className="container-loading">
 							<p className="title-h3">Génération...</p>
 							<div className="loading-container mt-10">
 								<p>{count}/6</p>
@@ -81,7 +81,7 @@ const Demo = () => {
 									<div style={{transform: `scaleX(${(1/6)*count})`}} className="loader"></div>
 								</div>
 							</div>
-						</>
+						</div>
 					)}
 					{identityFinish && !loading && (
 						identityItem.map((item:any, index: number) => (

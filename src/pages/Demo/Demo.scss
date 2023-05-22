@@ -47,12 +47,18 @@
 	.resultat {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-
+		
+		.container-loading{
+			align-items: center;
+			p {
+				text-align: center;
+			}
+		}
 		.loading-container {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			
 			.bar-loading {
 				width: 250px;
 				height: 5px;
