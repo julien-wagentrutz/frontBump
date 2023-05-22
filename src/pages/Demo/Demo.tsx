@@ -13,6 +13,7 @@ const Demo = () => {
 	const [identityItem, setIdentityItem] = useState<any>([])
 	const [loading, setLoading] = useState<boolean>(false)
 	const [identityFinish, setIdentityFinish] = useState<boolean>(false)
+	const [count, setCount] = useState<number>(0)
 	
 	const onChangeInputValue = (key: string,answer: string) => {
 		setData({...data, [key]: {value: answer} })
@@ -27,7 +28,7 @@ const Demo = () => {
 		console.log("start");
 		setLoading(true)
 		for(let i = 0; i < forms.items.length; i++) {
-			console.log(i);
+			
 				fetch("https://bumpison.herokuapp.com/api/identity/generate", {
 					method: "POST",
 					headers: {
@@ -36,9 +37,8 @@ const Demo = () => {
 					body: JSON.stringify(forms.items[i])
 				}).then((response) => {
 					response.json().then((data: any) => {
-						
 						const tags = data.message.split(';')
-
+						setCount(i)
 						identity = JSON.parse(JSON.stringify(identity));
 						identity.push({id: data.id, tags: tags})
 						setIdentityItem(identity)
@@ -73,7 +73,15 @@ const Demo = () => {
 				</form>
 				<div className="resultat mt-18">
 					{!identityFinish && loading && (
-						<p>Loading...</p>
+						<>
+							<p className="title-h3">Génération...</p>
+							<div className="loading-container mt-10">
+								<p>{count}/6</p>
+								<div className="bar-loading mt-8">
+									<div style={{transform: `scaleX(${(1/6)*count})`}} className="loader"></div>
+								</div>
+							</div>
+						</>
 					)}
 					{identityFinish && !loading && (
 						identityItem.map((item:any, index: number) => (

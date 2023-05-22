@@ -44,6 +44,32 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	.resultat {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.loading-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.bar-loading {
+				width: 250px;
+				height: 5px;
+				border-radius: 8px;
+				background-color: #dddddd;
+				overflow: hidden;
+				.loader {
+					width: 100%;
+					height: 100%;
+					background: var(--color-green-400);
+					transform: scaleX(0);
+					transform-origin: left;;
+				}
+			}
+		}
+	}
+
 	.container {
 		padding: 10px 90px;
 	}
