@@ -38,7 +38,7 @@ const Demo = () => {
 				}).then((response) => {
 					response.json().then((data: any) => {
 						const tags = data.message.split(';')
-						setCount(i)
+						setCount(i+1)
 						identity = JSON.parse(JSON.stringify(identity));
 						identity.push({id: data.id, tags: tags})
 						setIdentityItem(identity)
