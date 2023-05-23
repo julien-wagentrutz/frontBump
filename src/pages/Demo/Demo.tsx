@@ -201,7 +201,7 @@ const forms = {
 			]
 		},
 		{
-			"id":"personality",
+			"id":"personalité",
 			"items": [
 				{
 					"type":"text",
@@ -456,7 +456,7 @@ const forms = {
 				{
 					"type":"radio",
 					"question": "Quelle expérience globale souhaitez-vous offrir à vos clients ?",
-					"answer": "Des familles avec enfants "
+					"answer": "Une expérience conviviale et chaleureuse, avec un service attentionné et une ambiance décontractée."
 				}
 			]
 		}
