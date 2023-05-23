@@ -329,6 +329,136 @@ const forms = {
 					"answer": '["Satisfaits et comblés", "Heureux et joyeux"]'
 				}
 			]
+		},
+		{
+			"id":"reflet",
+			"items": [
+				{
+					"type":"text",
+					"question": "Comment décririez-vous la perception que les clients ont de votre restaurant ?",
+					"answer": "Nous souhaitons entretenir une relation de confiance, de proximité et de fidélité avec nos clients."
+				},
+				{
+					"type": "range",
+					"range_start":0,
+					"range_end": 5,
+					"question": "TRADITIONNEL / MODERNE", 
+					"answer": 4
+				},
+				{
+					"type": "range",
+					"range_start":0,
+					"range_end": 5,
+					"question": "CONFORTABLE / BRANCHÉ", 
+					"answer": 2
+				},
+				{
+					"type": "range",
+					"range_start":0,
+					"range_end": 5,
+					"question": "HAUT DE GAMME  / ABORDABLE", 
+					"answer": 4
+				},
+				{
+					"type": "range",
+					"range_start":0,
+					"range_end": 5,
+					"question": "DÉCONTRACTÉ / ÉLÉGANT", 
+					"answer": 1.5
+				},
+				{
+					"type": "range",
+					"range_start":0,
+					"range_end": 5,
+					"question": "LOCAL / INTERNATIONAL", 
+					"answer": 4
+				},
+				{
+					"type":"radio",
+					"question": "Comment votre restaurant est-il perçu par vos clients ? ",
+					"answer": "Convivial et chaleureux "
+				},
+				{
+					"type":"radio",
+					"question": "Comment votre restaurant se distingue-t-il de la concurrence ? ",
+					"answer": "Par la qualité de son service "
+				},
+				{
+					"type":"radio",
+					"question": "Comment décririez-vous la clientèle qui fréquente votre restaurant ? ",
+					"answer": "Des familles avec enfants "
+				}
+			]
+		},
+		{
+			"id":"mentalisation",
+			"items": [
+				{
+					"type":"text",
+					"question": "Comment voulez-vous que vos clients se sentent lorsqu'ils mangent chez vous ?",
+					"answer": "Nous souhaitons que ses clients se sentent satisfaits et apprécient leur repas lorsqu'ils mangent chez eux."
+				},
+				{
+					"type": "range",
+					"range_start":0,
+					"range_end": 5,
+					"question": "confortable / surpis", 
+					"answer": 1.5
+				},
+				{
+					"type": "range",
+					"range_start":0,
+					"range_end": 5,
+					"question": "joyeux / sérieux", 
+					"answer": 2
+				},
+				{
+					"type": "range",
+					"range_start":0,
+					"range_end": 5,
+					"question": "décontracté / sophistiqué", 
+					"answer": 1.5
+				},
+				{
+					"type": "range",
+					"range_start":0,
+					"range_end": 5,
+					"question": "enthousiaste / calme", 
+					"answer": 3
+				},
+				{
+					"type": "range",
+					"range_start":0,
+					"range_end": 5,
+					"question": "réconforté / éveillé", 
+					"answer": 2.5
+				},
+				{
+					"type":"radio",
+					"question": "Comment souhaiteriez-vous que vos clients se sentent en venant manger chez vous ? ",
+					"answer": "Comme s’ils étaient chez eux, dans une ambiance chaleureuse et conviviale."
+				},
+				{
+					"type":"radio",
+					"question": "Quel type d’émotion souhaitez-vous que vos clients ressentent lorsqu’ils découvrent votre carte ? ",
+					"answer": "La satisfaction de trouver des plats classiques et de qualité."
+				},
+				{
+					"type":"radio",
+					"question": "Quelle ambiance souhaitez-vous donner à votre restaurant ?",
+					"answer": "Un endroit chaleureux et convivial, où les clients se sentent comme chez eux."
+				},
+				{
+					"type":"radio",
+					"question": "Quel type d’accueil souhaitez-vous offrir à vos clients ?",
+					"answer": "Un accueil professionnel et efficace, avec une prise en charge rapide des commandes et des demandes."
+				},
+				{
+					"type":"radio",
+					"question": "Quelle expérience globale souhaitez-vous offrir à vos clients ?",
+					"answer": "Des familles avec enfants "
+				}
+			]
 		}
 	]
 }
